@@ -4,51 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BikersCRShop</title>
+    <title>BikerShopCR</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Biker's CR Shop</h1>
+    <header >
+        <h1 class ="style-title">Biker Shop<span> CR!</span></h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Biker's CR Shop</a>
-        <a href="shop.html">Shop</a>
-        <a href="blog.html">Blog</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact us</a>
-    </nav>
+    <div class="container-nav">
+        <nav class="nav-main container" >
+            <a href="index.html">Home</a>
+            <a href="about.html">About Biker's CR Shop</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </div>
 
-    <section>
-        <h2>Bike Categories</h2>
-        <div>
+    <div class="hero"></div>
+
+    <section class="conteiner categories">
+        <h2>...Motorcycle <span>Categories...</span></h2>
+    <div class="categories-list">
+        <div class="categories-div">
             <img src="./images/1.jpg" alt="Sport Image"/>
             <a href="#sport.html">Sport</a>
         </div>
-        <div>
+        <div class="categories-div">
             <img src="./images/5.jpg" alt="Trail Image"/>
             <a href="#trail.html">Trail-Adventure</a>
         </div>
-        <div>
+        <div class="categories-div">
             <img src="./images/3.jpg" alt="Urban Image"/>
             <a href="#urban.html">Urban-Touring</a>
         </div>
-        <div>
+        <div class="categories-div">
             <img src="./images/4.jpg" alt="Special Image"/>
             <a href="#special.html">Special Edition</a>
         </div>
+    </div>
     </section>
 
-    <section>
-        <div>
-            <h2>About us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Omnis beatae iusto laboriosam adipisci, odio laborum rerum amet. 
-                Similique illum suscipit sint porro voluptates autem, facilis est 
-                tempore eligendi ipsam. Eaque.</p>
+    <section class="about-us">
+        <div class="container about-us-grid">
+            <div class="text-about-us">
+            <h3>About Us</h3>
+            <p class="text">Welcome to The Motorcycle Shop! Family-owned since 1972, we have been serving riders 
+               of all types in the great country Costa Rica.We know individuality is important,which
+               is why we pay close attention to the interests of each customer. From the minute you 
+               walk through the door,meeting your needs is our top priority.
+            </p>
+            </div>
         </div>
     </section>
+
+
     <main>
         <h2>Our Products</h2>
 

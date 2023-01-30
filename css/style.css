@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem=10px*/
+    background-color: #fdf0d5;
+}
+*, *::before, *::after{
+    box-sizing:  inherit;
+}
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1.6rem;
+   line-height: 1.5; 
+}
+/* Standar Style*/ 
+h1,h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin:0 0 5rem 0;
+    color:#003049;
+}
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: #fdf0d5;  
+    text-align: center;
+    margin-top: 2px;
+}
+h2 span {
+    color: #c1121f;
+}
+a{
+    text-decoration: none;
+    color: #003049;
+}
+header{
+    font-size: 100px;
+}
+.container{
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+/* Header & Nav */
+.style-title{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 50%;
+}
+.style-title span {
+    color: #c1121f;
+}
+.container-nav{
+    border-top: 1px solid #c1121f;
+}
+.nav-main{
+    padding:  2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+}
+
+/*Categories*/
+.categories {
+    padding-top: 5rem;
+}
+.categories h2{
+    text-align: center;
+}
+.categories-div a {
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.categories-div a:Hover{
+    background-color: #c1121f;
+    color: #ffffff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.categories-list{
+    display: grid;
+    grid-template-columns: 325px 325px 288px 330px;
+    gap:2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+img{
+    max-width: 100%;  
+   display: block;
+   border-radius: 5px;
+}
+
+/*About US Style*/
+.about-us{
+    background-image:  linear-gradient(to right, transparent 50%, #003049 50%,#003049 100%),
+     url(../images/about-us.jpg);
+     background-position: left ;
+     padding: 10rem 0;
+     background-repeat: no-repeat;
+     background-size: 100%, 120rem;
+     margin-top: 25px;
+}
+
+.about-us-grid{
+    display: flex;
+    justify-content: flex-end;
+    height: 250px;
+}
+
+.text-about-us {
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color:#ffffff;
+    text-align: center;
+}
+.text {
+    text-align: justify;
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
