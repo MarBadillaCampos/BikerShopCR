@@ -106,6 +106,7 @@ img{
     padding: 1rem;
     transition: background-color .3s ease-out;
     margin-top: 1rem;
+    text-align: center;
 }
 .btn:hover {
     background-color: #769c02;
@@ -113,6 +114,10 @@ img{
 /*Utilities*/
 .text-center{
     text-align: center;
+}
+
+.max-with-30{
+    max-width: 30rem;
 }
 /*About US Style*/
 .about-us{
@@ -164,6 +169,7 @@ img{
 .price{
     font-size: 2.8rem;
     font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
  .product img:hover{
     transform: scale(.9);
@@ -181,7 +187,7 @@ img{
  .product:nth-child(1){
     grid-column: 1 / 7;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 3fr 1fr;
  }
  .product:nth-child(1) img{
     height: 43rem;
@@ -236,5 +242,99 @@ img{
     width: 100%;
     object-fit: cover;
  }
+/*Footer */
+.footer-site h3{
+    color: #003049;
+    text-align: left;
+    margin-bottom: 0.1rem;
+    font-size: 4rem;
+}
+.footer-cent{
+    margin: auto;
+}
+.footer-site{
+    border-top: 1px solid #003049;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+.footer-nav a{
+    display: block;
+}
+.footer-site p{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    color:#003049;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+/*Our Family*/
+.aboutUs-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap:4rem;
+ }
+ .story-inf{
+    display: flex; /*left to right*/
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+ }
 
+ /*Blog Style*/
+ .container-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+    margin-left: 15rem;
+    width: 110rem;
+ }
+ .in{
+   border-bottom: 2px solid #e1e1e1; 
+   padding-bottom: 4rem;
+   margin-bottom: 2rem;
+ }
+ .in:last-of-type{
+    border-bottom: none;
+ }
+ .meta-data{
+    display: flex;
+    justify-content: space-between;
+ }
+ .meta-data p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 200;
+ }
+ .meta-data span{
+    color: #003049;;
+ }
+ .blog-in{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: justify;
+ }
+ .content-in-blog{
+    width: 60rem;
+    margin: auto;
+ }
+
+ /*Gallery*/
+ .gallery{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;  
+ }
+ .gallery img{
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+ }
