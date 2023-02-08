@@ -57,6 +57,14 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.container-nav a:Hover{
+    background-color: #c1121f;
+    color: #ffffff;
+    width: 15%;
+    text-align: center;
+    border-radius: 4px;
+    height: 5rem;
+}
 .hero {
     background-image: url('../images/hero.jpg');
     background-repeat: no-repeat;
@@ -97,6 +105,7 @@ img{
    display: block;
    border-radius: 5px;
 }
+
 .btn{
     background-color: #8cbc00;
     display: block;
@@ -107,9 +116,22 @@ img{
     transition: background-color .3s ease-out;
     margin-top: 1rem;
     text-align: center;
+    border: none;
+}
+.btn-back{
+    background-color: #8cbc00;
+    display: block;
+    color: #FFF;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    margin-top: 1rem;
+    text-align: center;
+    border: none;
+    width: 25%;
 }
 .btn:hover {
     background-color: #769c02;
+    cursor: pointer;
 }
 /*Utilities*/
 .text-center{
@@ -338,3 +360,41 @@ img{
     width: 35rem;
     object-fit: cover;
  }
+
+ /*form style*/
+ .form {
+    max-width: 60rem;
+    margin: 0 auto;
+ }
+ .form fieldset {
+    border: 1px solid #003049;
+    margin-bottom: 2rem;
+ }
+.form legend {
+    background-color: #c1121f;
+    width: 100%;
+    text-align: center;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 1rem;
+    margin-bottom: 4rem;
+ }
+
+ .field {
+    display: flex;
+    margin-bottom: 2rem;
+
+ }
+ .field label{
+    flex-basis: 10rem;
+ }
+ .field input:not([type="radio"]),
+ .field textarea,
+ .field select {
+     flex: 1;
+     border: 1px solid #e1e1e1;
+     padding: 1rem;
+ }
+
+

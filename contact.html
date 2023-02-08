@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -25,7 +25,79 @@
     </div>
     
     <main class="main-content container">
-        <h2 class="text-center">Contact</h2>            
+        <h2 class="text-center">Contact</h2> 
+        
+        <form class="form">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="field">
+                <label for="fullname">Full Name: </label>
+                <input id="fullname" type="text" placeholder="Write your full name" required/>
+            </div>
+
+            <div  class="field">
+                <label for="description">Description: </label>
+                <input id="description" type="text" placeholder="Write your description"/>
+            </div>
+
+            <div  class="field">
+                <label for="email">Email: </label>
+                <input id="email" type="email" placeholder="Write your email"/>
+            </div>
+
+            <div  class="field">
+            <label for="cellphone">Cellphone: </label>
+            <input id="cellphone" type="tel" placeholder="Write your cellphone"/>
+            </div>
+
+            <div  class="field">
+                <label>Message: </label>
+                <textarea rows="5" cols="5"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Country </legend>
+            <div class="field">
+                <label for="country">Country:</label>
+                    <select id="country">
+                        <option>--Choose--</option>
+                        <option>Costa Rica</option>
+                        <option>México</option>
+                        <option>Chile</option>
+                        <option>Colombia</option>
+                        <option>Argentina</option>
+                    </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extra Information</legend>
+            <div class="field">
+                <label for="customer">Customer</label>
+                <input id="customer" type="radio" name="type" value="customer">
+            </div>
+
+            <div class="field">
+                <label for="supplier">Supplier</label>
+                <input id="supplier" type="radio" name="type" value="supplier">
+            </div>
+
+            <div class="field">
+                <label for="cat">Categorie</label>
+                <input list="cat" name="cat">
+                <datalist id="cat">
+                    <option value="Sport">
+                    <option value="Urban">
+                    <option value="Motocross-Trail">
+                    <option value="Special Edition">
+                </datalist>
+            </div>
+        </fieldset>
+
+        <input class="btn" type="submit" value="Send">
+        </form>
     </main>
 
   <footer class="footer-site">
